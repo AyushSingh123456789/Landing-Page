@@ -1,0 +1,45 @@
+/* * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.quote-outer-wrapper {
+    background-color: #f0f2f5;
+    background-image: linear-gradient(135deg, #e0e6ed 0%, #f0f2f5 100%);
+    width: 100%;
+}
+
+.quoto-sec-fuzzy {
+    width: 100%;
+
+    /* CHANGED: Translucent dark/gray tint overlay instead of white */
+    background-color: rgba(31, 41, 55, 0.15);
+
+    /* The blur effect spanning edge to edge */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Darker subtle borders to fit the gray theme */
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* 3. Typography Styles */
+.quote-text {
+    /* Kept dark dark-charcoal for crisp readability over the gray fuzz */
+    color: #111827;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.quote-author {
+    color: #374151;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
